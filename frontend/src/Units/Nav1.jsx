@@ -10,11 +10,15 @@ export default function Nav1(){
              <Link to="/">Home</Link>
           </li>
           <li>
-             <Link to="/Additem">Add Items</Link>
-          </li>
-          <li>
              <Link to="/login">Login</Link>
           </li>
+          <li>
+             <Link to="/Products">Products</Link>
+          </li>
+          <li>
+             <Link to="/Checkout">Checkout</Link>
+          </li>
+         
        </ul>
  </nav>
  </div>

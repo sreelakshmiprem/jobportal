@@ -15,17 +15,17 @@ const CheckoutPage = () => {
   const [cartItems, setCartItems] = useState([
     { id: 1, 
       name: 'Product 1', 
-      price: 26, 
+      price: 230, 
       image: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1612885645-51nfuxdgizl-sl1000-1612885634.jpg?crop=1xw:1xh;center,top&resize=980:*'
     },
     { id: 2,
       name: 'Product 2', 
-      price: 15, 
+      price: 450, 
       image: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1664898681-s2286375-main-zoom-1664898675.jpg?crop=1xw:1xh;center,top&resize=980:*' 
     },
     { id: 3,
       name: 'Product 3', 
-      price: 20,
+      price: 210,
       image: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1596202772-best-skin-care-products-1596202753.jpg?crop=1xw:1xh;center,top&resize=980:*' 
     }
   ]);

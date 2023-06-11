@@ -26,9 +26,8 @@ Herbal and natural skin products are formulated with plant-based ingredients, of
 </p>
 <p>Join on this venture by </p>
 <div className="mt-4">
-
-</div>
 <div class="p-2 "><Link to="/login"><Button variant="outline-dark">Login</Button></Link></div>
+</div>
 </Container>
 </div>
 );

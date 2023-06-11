@@ -19,6 +19,8 @@ return (
           <Route path="/product" element={<Product />} />
           <Route path="/login" element={<Login />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/checkout" element={<Checkout />} />
        </Routes>
     </div>
  );

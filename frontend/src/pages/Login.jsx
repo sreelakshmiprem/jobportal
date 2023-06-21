@@ -1,57 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react'
 import SignInPage from './SignInPage';
 import SignUpPage from './SignUpPage';
-
-const LoginPage = () => {
-  const [isSignIn, setIsSignIn] = useState(true);
-
-  const handleToggleForm = () => {
-    setIsSignIn(!isSignIn);
-  };
-
+export default function Login() {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Skin Enchant</h1>
-      <div style={styles.formContainer}>
-        {isSignIn ? (
-          <SignInPage handleToggleForm={handleToggleForm} />
-        ) : (
-          <SignUpPage handleToggleForm={handleToggleForm} />
-        )}
+    <div><form>
+    <fieldset disabled>
+      <legend>Disabled fieldset example</legend>
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Disabled input</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input"/>
       </div>
-    </div>
-  );
-};
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
- 
-    backgroundImage: `url("https://img.freepik.com/premium-photo/beauty-concept-flat-lay-natural-cosmetic-product-daily-skin-care-pink-background-copy-space_117638-66.jpg")`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
-  title: {
-    fontSize: '45px',
-    fontWeight: 'bold',
-    fontStyle: 'italic',
-    fontFamily: 'Lucida Sans, Calibri, sans-serif',
-    marginBottom: '40px',
-  },
-  formContainer: {
-    width: '300px',
-    padding: '20px',
-    border: '1px solid gray',
-    borderRadius: '5px',
-    backgroundColor: '#fff',
-  },
-};
-
-export default LoginPage;
-
-
-
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Disabled select menu</label>
+        <select id="disabledSelect" class="form-select">
+          <option>Disabled select</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled/>
+          <label class="form-check-label" for="disabledFieldsetCheck">
+            Can't check this
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form></div>
+  )
+}

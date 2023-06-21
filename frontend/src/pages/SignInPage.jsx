@@ -7,8 +7,7 @@ const SignInPage = ({ handleToggleForm }) => {
   const handleSignIn = (e) => {
     e.preventDefault();
     console.log('Sign In:', email, password);
-    // Add your sign-in logic here
-  };
+   };
 
   return (
     <div>

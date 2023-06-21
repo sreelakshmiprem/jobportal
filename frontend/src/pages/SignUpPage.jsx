@@ -9,7 +9,6 @@ const SignUpPage = ({ handleToggleForm }) => {
   const handleSignUp = (e) => {
     e.preventDefault();
     console.log('Sign Up:', email, password, name, phoneNumber);
-    // Add your sign-up logic here
   };
 
   return (

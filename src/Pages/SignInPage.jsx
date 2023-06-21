@@ -34,6 +34,7 @@ const SignInPage = ({ handleToggleForm }) => {
         <button type="button" onClick={handleToggleForm} style={styles.toggleButton}>
           Sign Up
         </button>
+        
       </p>
     </div>
   );
